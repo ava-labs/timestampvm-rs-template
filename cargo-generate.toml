@@ -1,2 +1,2 @@
 [template]
-ignore = ["Cargo.lock"]
+ignore = ["Cargo.lock", ".github"]

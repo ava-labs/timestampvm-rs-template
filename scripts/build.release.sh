@@ -15,9 +15,9 @@ fi
 # "--bin" can be specified multiple times for each directory in "bin/*" or workspaces
 cargo build \
 --release \
---bin timestampvm
+--bin {{project-name}}
 
-./target/release/timestampvm --help
+./target/release/{{project-name}} --help
 
-./target/release/timestampvm genesis "hello world"
-./target/release/timestampvm vm-id timestampvm
+./target/release/{{project-name}} genesis "hello world"
+./target/release/{{project-name}} vm-id {{project-name}}
