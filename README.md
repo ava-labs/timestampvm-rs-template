@@ -14,7 +14,7 @@ then to use this template run:
 ## Dependencies
 
 - Latest version of stable Rust.
-- To build and test timestampvm you need [protoc](https://grpc.io/docs/protoc-installation/#install-pre-compiled-binaries-any-os) version >= 3.15.0.
+- To build and test the plugin you need [protoc](https://grpc.io/docs/protoc-installation/#install-pre-compiled-binaries-any-os) version >= 3.15.0.
 
 ## Build the plugin
 
@@ -33,7 +33,7 @@ VM_PLUGIN_PATH=$(pwd)/target/release/{{project-name}} \
 ./scripts/tests.e2e.sh
 
 # or, specify the custom avalanchego binary
-VM_PLUGIN_PATH=$(pwd)/target/release/timestampvm \
+VM_PLUGIN_PATH=$(pwd)/target/release/{{project-name}} \
 ./scripts/tests.e2e.sh ~/go/src/github.com/ava-labs/avalanchego/build/avalanchego
 
 # (optional) set NETWORK_RUNNER_ENABLE_SHUTDOWN=1 in "tests.e2e.sh"
